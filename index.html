@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Más es mejor? - Artículo de Investigación</title>
+
+  <!-- Tipografía DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Fancybox -->
+  <script src="https://kit.fontawesome.com/a2d9a66c2c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <!-- Estilos -->
+  <style>
+    h1, h2 {
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 4.5rem;
+    }
+    h2 {
+      font-size: 2.8rem;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'DM Sans', sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #1e1e1e;
+    }
+    header.hero {
+      position: relative;
+      background: url('https://www.iidhamerica.org/img/noticias/64481f3d579fd.jpeg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      color: white;
+    }
+    header.hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+    header.hero * {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-text {
+      background: rgba(0,0,0,0.5);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    nav {
+      background: #ffe8ec;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .nav-logo {
+      font-weight: bold;
+      color: #d62828;
+      font-size: 1.5rem;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    .nav-menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    .nav-menu a:hover {
+      color: #d62828;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+    footer {
+      background: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>¿Más es mejor?</h1>
+    <p style="font-size: 1.4rem;">Así afecta la idea de productividad en la educación escolar</p>
+  </header>
+
+  <main>
+    <section id="intro">
+      <figure>
+        <img src="https://www.humanium.org/fr/wp-content/uploads/UNESCO-P-Calinescu-1.jpg" alt="Niña escribiendo en clase" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:0.5rem;">
+        <figcaption>Fotografía de una niña en clase – UNESCO / P. Calinescu</figcaption>
+      </figure>
+    </section>
+
+    <section id="realidad">
+      <figure>
+        <img src="https://polianteas.wordpress.com/wp-content/uploads/2018/11/321.jpg?w=1200" alt="Estudiantes en una escuela pública" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:0.5rem;">
+        <figcaption>Estudiantes en una institución pública colombiana – Polianteas</figcaption>
+      </figure>
+    </section>
+
+    <section id="jornada">
+      <figure>
+        <img src="https://alponiente.com/wp-content/uploads/2023/02/educacion.jpg" alt="Estudiantes en clase durante jornada extendida" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:0.5rem;">
+        <figcaption>Estudiantes en jornada única – Al Poniente (2023)</figcaption>
+      </figure>
+    </section>
+
+    <section id="estres">
+      <figure>
+        <img src="https://estaticos-cdn.prensaiberica.es/clip/3127e1a6-91f9-4e26-9c96-411592a24d00_16-9-discover-aspect-ratio_default_0.jpg" alt="Estudiante agobiado por el estrés académico" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:0.5rem;">
+        <figcaption>Estrés académico en jóvenes – Prensa Ibérica</figcaption>
+      </figure>
+    </section>
+
+    <section id="infancia">
+      <figure>
+        <img src="https://saludconlupa.com/media/images/BEAUTY_STRESS-0.width-1920.jpg" alt="Niña estresada en edad escolar" style="width:100%; max-width:700px; border-radius:10px; margin-bottom:0.5rem;">
+        <figcaption>Sobrecarga emocional en la infancia – Salud con lupa</figcaption>
+      </figure>
+    </section>
+  
+<section id="interaccion" class="animate__animated animate__fadeInUp" style="background: linear-gradient(135deg, #fff0f0 0%, #ffecec 100%); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+  <h2>¿Alguna vez sentiste esto?</h2>
+  <form action="https://formspree.io/f/mnqeoqrg" method="POST" style="display:flex; flex-direction:column; gap:1rem; max-width:600px; margin:auto;">
+    <label>¿Has sentido burnout en la escuela o universidad?</label>
+    <select name="burnout">
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+      <option value="no_se">No estoy segurx</option>
+    </select>
+    <label>¿Qué factores te generan más presión?</label>
+    <input type="text" name="factores" required>
+    <label>¿Te gustaría recibir recomendaciones para lidiar con esto?</label>
+    <select name="respuestas">
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+    <button type="submit" style="background:#d62828; color:white; padding:0.5rem 1rem; border:none; border-radius:5px; cursor:pointer;">Enviar respuestas</button>
+  </form>
+</section>
+
+<section id="descarga" style="text-align:center; margin-top:2rem; background: linear-gradient(135deg, #f0f8ff 0%, #d4e4ff 100%); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  <h2>Descarga el artículo en PDF</h2>
+  <a href="articulo-investigacion.pdf" download style="display:inline-block; background:#003049; color:white; padding:1rem 2rem; border-radius:10px; font-weight:bold; text-decoration:none;">
+    <i class="fas fa-file-pdf"></i> Descargar PDF
+  </a>
+</section>
+
+<div id="comentario-flotante" style="position:fixed; bottom:1.5rem; right:1.5rem; z-index:999;">
+  <a href="#interaccion" style="background:#d62828; color:white; padding:0.75rem 1rem; border-radius:50%; font-size:1.2rem; box-shadow:0 0 10px rgba(0,0,0,0.2);">
+    💬
+  </a>
+</div>
+</main>
+
+
+  <footer>
+    © 2025 por Angie Estupiñán, Manuela Pérez y Estefanía Lozano. Investigación crítica sobre educación escolar en Colombia.
+  
+  <div style="margin-bottom:1rem;">
+    <a href="https://instagram.com" target="_blank" style="color:white; margin:0 0.5rem;"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank" style="color:white; margin:0 0.5rem;"><i class="fab fa-twitter"></i></a>
+    <a href="mailto:contacto@laorejaescolar.com" style="color:white; margin:0 0.5rem;"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
